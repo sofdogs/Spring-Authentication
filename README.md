@@ -1,6 +1,6 @@
-# Spring Boot 3 Security with JWT Implementation 
+# Spring Boot 3.2.12 Security with JWT Implementation 
 
-This project demonstrates a complete implementation of **security using Spring Boot 3.0 and JSON Web Tokens (JWT)**. It covers user authentication, role-based access control, password encryption, and more — all integrated with Spring Security.
+This project demonstrates a complete implementation of **security using Spring Boot 3.2.12 and JSON Web Tokens (JWT)**. It covers user authentication, role-based access control, password encryption, and more — all integrated with Spring Security.
 ___
 
 ## 🔐 Features
@@ -16,7 +16,7 @@ ___
 
 ## 🛠️ Technologies Used
 
-- **Spring Boot 3.0**
+- **Spring Boot 3.2.12**
 - **Spring Security**
 - **JSON Web Tokens (JWT)**
 - **BCrypt Password Encoder**
@@ -37,17 +37,15 @@ Make sure you have the following installed:
 
 ---
 
-### 📦 Setup Instructions
+## 🧪 API Overview
 
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/ali-bouali/spring-boot-3-jwt-security.git
+- POST /api/v1/auth/register - Register a new user
+- POST /api/v1/authenticate - Login and receive access + refresh token
+- POST /api/v1/auth/refresh-token - Get a new access token using a refresh token
 
-2. **Create a PostgreSQL Database**
-   
-4. Build the project
-  ```bash
-   mvn clean install
+### Secure endpoints requre a valid JWT in the header: Authorization: Bearer <access_token>
+
+
 
 
 
