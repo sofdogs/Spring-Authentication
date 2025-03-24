@@ -43,7 +43,7 @@ Make sure you have the following installed:
 - POST /api/v1/authenticate - Login and receive access + refresh token
 - POST /api/v1/auth/refresh-token - Get a new access token using a refresh token
 
-### Secure endpoints requre a valid JWT in the header: Authorization: Bearer <access_token>
+### Secure endpoints require a valid JWT in the header: Authorization: Bearer <access_token>
 
 
 
